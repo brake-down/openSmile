@@ -1,9 +1,9 @@
 # openSmile
-# 현재 완료된 것
+## 현재 완료된 것
 1. 영상에서 오디오만 추출(openSmile, ffmpeg 사용) → 성공
 2. 확률 계산 → 이거 어떻게 구현할지 **의견 구함**. 현재는 다음 “설명”에 있는 내용으로 구현. 하지만 “설명” 상태로 하게 되면 거의 다 급발진으로 판단하는거 같음…(자료를 너무 다양한걸 써서 그런건지 다른 이유인지는 몰라도…) → 이렇게 되면 차 타다가 신나서 노래 부르는 순간에도 급발진으로 잡힐 각…
 
-# 활용된 자
+## 활용된 자료
 ### 1️. **음성 톤과 높낮이 관련 (Pitch / F0)**
 
 - **F0semitoneFrom27.5Hz_sma3nz_amean** : 평균 피치
@@ -45,7 +45,7 @@
 - **MeanUnvoicedSegmentLength / StddevUnvoicedSegmentLength** : 무성 구간 길이
 - 급발진 상황에서는 **짧은 비명, 짧은 호흡 반복** → Segment feature 변화
 
-# 구현
+## 구현
 1. ffmpeg로 영상(mp4 등) → 오디오(WAV, 16kHz/mono) 추출
 
 2. openSMILE (GeMAPSv01b/eGeMAPSv02 등) 기능을 사용해 기능(Functional) CSV 출력
@@ -66,11 +66,11 @@
 
 4. 간단한 규칙기반 지표 플래그와 요약 리포트 생성 → 이걸 통해서 확률 계산
 
-# 실험(영상 다운은 노션에 있음)
+## 실험(영상 다운은 노션에 있음)
 
 sample1 : 급발진 상황 o / sample2: x / sample3: o / sample4: x
 
-# 결과
+## 결과
 
 - sample1
     
